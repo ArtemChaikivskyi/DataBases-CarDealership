@@ -44,14 +44,21 @@ git clone https://github.com/ArtemChaikivskyi/DataBases-CarDealership.git
 cd DataBases-CarDealership
 ```
 
-2. Встановіть залежності (PyQt5 або PyQt6 — залежно від використаної версії):
+2. Запустіть додаток через [uv](https://docs.astral.sh/uv/) (сам створить `.venv`,
+   візьме Python 3.12 і встановить залежності з `pyproject.toml` / `uv.lock`):
 ```bash
-pip install PyQt5
+uv run python Login.py
 ```
 
-3. Запустіть додаток:
+Головне вікно без авторизації:
 ```bash
-python Elite_Motors.py
+uv run python Elite_Motors.py
+```
+
+### Без uv
+```bash
+pip install "PyQt5>=5.15"
+python Login.py
 ```
 
 ## Автор
